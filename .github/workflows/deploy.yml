@@ -36,8 +36,8 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          SITE_URL: https://peijingbobo.github.io
-          SITE_BASE: /TangoForgePages/
+          SITE_URL: https://tangoforge.pei.cool
+          SITE_BASE: /
 
       - name: Publish
         uses: peaceiris/actions-gh-pages@v4
@@ -45,3 +45,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./dist
+          cname: tangoforge.pei.cool
