@@ -1,0 +1,43 @@
+---
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
+const features = [
+  {
+    title: 'Local-first Daemon',
+    label: 'Core',
+    body: 'Runs the task pool, permission checks, audit trail, and project context on the local machine.',
+  },
+  {
+    title: 'Agent Channels',
+    label: 'MCP',
+    body: 'Expose the same task workflow through MCP, HTTP, and CLI so different coding agents can collaborate safely.',
+  },
+  {
+    title: 'Controlled Writes',
+    label: 'Safety',
+    body: 'Keep agents read-first by default, then grant explicit project-level actions from the desktop client.',
+  },
+  {
+    title: 'Knowledge Base',
+    label: 'Context',
+    body: 'Index project notes and decisions so agents can retrieve the right context before touching work.',
+  },
+];
+---
+
+<div class="grid gap-4 md:grid-cols-2">
+  {features.map((feature) => (
+    <Card>
+      <CardHeader>
+        <div class="mb-3">
+          <Badge variant="secondary">{feature.label}</Badge>
+        </div>
+        <CardTitle className="text-xl">{feature.title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p class="text-sm leading-7 text-muted-foreground">{feature.body}</p>
+      </CardContent>
+    </Card>
+  ))}
+</div>

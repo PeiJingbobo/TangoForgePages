@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from 'astro:content';
+import ContentLayout from '@/layouts/ContentLayout.astro';
+import { Card, CardContent } from '@/components/ui/card';
+
+const entries = (await getCollection('changelog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<ContentLayout
+  title="Changelog"
+  description="Website and product-facing updates for TangoForge."
+  eyebrow="Release notes"
+>
+  <div class="space-y-6">
+    {await Promise.all(entries.map(async (entry) => {
+      const { Content } = await render(entry);
+      return (
+        <Card>
+          <CardContent className="p-6">
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="rounded-md bg-primary px-2 py-1 text-sm font-semibold text-primary-foreground">{entry.data.version}</span>
+              <h2 class="text-xl font-semibold tracking-normal">{entry.data.title}</h2>
+            </div>
+            <p class="mt-3 text-sm leading-6 text-muted-foreground">{entry.data.summary}</p>
+            <div class="prose mt-6 max-w-none">
+              <Content />
+            </div>
+          </CardContent>
+        </Card>
+      );
+    }))}
+  </div>
+</ContentLayout>

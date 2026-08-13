@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import ContentLayout from '@/layouts/ContentLayout.astro';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent } from '@/components/ui/card';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const base = import.meta.env.BASE_URL;
+---
+
+<ContentLayout
+  title="Blog"
+  description="Notes on agent workflows, local-first collaboration, MCP integrations, and product design for TangoForge."
+  eyebrow="Writing"
+>
+  <div class="grid gap-4">
+    {posts.map((post) => (
+      <a href={`${base}blog/${post.id}`}>
+        <Card className="transition-colors hover:bg-accent">
+          <CardContent className="p-6">
+            <div class="flex flex-wrap gap-2">
+              {post.data.tags.map((tag) => <Badge variant="secondary">{tag}</Badge>)}
+            </div>
+            <h2 class="mt-4 text-2xl font-semibold tracking-normal">{post.data.title}</h2>
+            <p class="mt-3 leading-7 text-muted-foreground">{post.data.description}</p>
+            <p class="mt-4 text-sm text-muted-foreground">{post.data.date.toLocaleDateString('en-US')} · {post.data.author}</p>
+          </CardContent>
+        </Card>
+      </a>
+    ))}
+  </div>
+</ContentLayout>

@@ -1,0 +1,20 @@
+---
+title: Agent 接入
+description: 通过 MCP、HTTP 或 CLI 让 AI Agent 以受控权限操作同一个 TangoForge 任务池。
+order: 2
+section: guide
+---
+
+## 接入模型
+
+TangoForge 提供三种 Agent 接入通道。不同通道访问同一套业务层，因此权限模型、状态流转和审计记录保持一致。
+
+| 通道 | 适合场景 | 说明 |
+| --- | --- | --- |
+| MCP | Claude Code / Cursor 等支持 MCP 的宿主 | 推荐给 Agent 原生工具调用 |
+| HTTP | 本地集成、调试、仪表盘 | 默认回环访问，可配置 token |
+| CLI | 终端、脚本、自动化 | 与 HTTP 等价，适合快速操作 |
+
+## 权限边界
+
+Agent 默认只读。创建任务、流转状态、导入导出、知识库写入等操作需要在客户端按项目显式授权。

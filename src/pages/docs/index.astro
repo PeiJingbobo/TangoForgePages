@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import ContentLayout from '@/layouts/ContentLayout.astro';
+import { Card, CardContent } from '@/components/ui/card';
+
+const docs = (await getCollection('docs')).sort((a, b) => a.data.order - b.data.order);
+const base = import.meta.env.BASE_URL;
+---
+
+<ContentLayout
+  title="Documentation"
+  description="Guides and references for running TangoForge as a local human-agent task coordination layer."
+  eyebrow="Docs"
+>
+  <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+    {docs.map((doc) => (
+      <a href={`${base}docs/${doc.id}`}>
+        <Card className="h-full transition-colors hover:bg-accent">
+          <CardContent className="p-6">
+            <p class="text-sm font-medium uppercase tracking-[0.16em] text-muted-foreground">{doc.data.section}</p>
+            <h2 class="mt-3 text-xl font-semibold tracking-normal">{doc.data.title}</h2>
+            <p class="mt-3 text-sm leading-6 text-muted-foreground">{doc.data.description}</p>
+          </CardContent>
+        </Card>
+      </a>
+    ))}
+  </div>
+</ContentLayout>

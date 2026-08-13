@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">TangoForge Dance Step Nodes Flat Icon</title>
+  <desc id="desc">A flat rounded-square app icon showing an abstract tango step path that also reads as a task dependency graph, ending in a small forge spark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="176" y1="96" x2="848" y2="928" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101f38"/>
+      <stop offset="1" stop-color="#071225"/>
+    </linearGradient>
+    <linearGradient id="path" x1="260" y1="720" x2="760" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#35f0d0"/>
+      <stop offset="0.52" stop-color="#22a7f2"/>
+      <stop offset="1" stop-color="#7c5cff"/>
+    </linearGradient>
+    <linearGradient id="nodeBlue" x1="308" y1="300" x2="710" y2="740" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4fe7ff"/>
+      <stop offset="1" stop-color="#2378ff"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="690" y1="244" x2="790" y2="344" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe28a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+
+  <path
+    d="M284 690 C382 612 318 486 448 458 C565 432 574 326 738 292"
+    fill="none"
+    stroke="url(#path)"
+    stroke-width="48"
+    stroke-linecap="round"
+  />
+  <path
+    d="M362 670 C448 714 543 674 610 584"
+    fill="none"
+    stroke="#1b3558"
+    stroke-width="36"
+    stroke-linecap="round"
+    opacity=".88"
+  />
+  <path
+    d="M362 670 C448 714 543 674 610 584"
+    fill="none"
+    stroke="#35f0d0"
+    stroke-width="18"
+    stroke-linecap="round"
+    opacity=".85"
+  />
+
+  <g fill="#0b1629">
+    <circle cx="284" cy="690" r="74"/>
+    <circle cx="390" cy="534" r="62"/>
+    <circle cx="480" cy="454" r="68"/>
+    <circle cx="610" cy="584" r="58"/>
+  </g>
+
+  <g fill="url(#nodeBlue)">
+    <circle cx="284" cy="690" r="46"/>
+    <circle cx="390" cy="534" r="36"/>
+    <circle cx="480" cy="454" r="42"/>
+    <circle cx="610" cy="584" r="34"/>
+  </g>
+
+  <g fill="#35f0d0">
+    <circle cx="390" cy="534" r="16"/>
+    <circle cx="610" cy="584" r="14"/>
+  </g>
+
+  <path
+    d="M738 232c8 0 14 5 16 13l13 57 57 13c8 2 13 8 13 16s-5 14-13 16l-57 13-13 57c-2 8-8 13-16 13s-14-5-16-13l-13-57-57-13c-8-2-13-8-13-16s5-14 13-16l57-13 13-57c2-8 8-13 16-13Z"
+    fill="url(#spark)"
+  />
+  <circle cx="738" cy="331" r="30" fill="#fff7d1" opacity=".82"/>
+
+  <path
+    d="M262 786h188"
+    fill="none"
+    stroke="#203755"
+    stroke-width="36"
+    stroke-linecap="round"
+    opacity=".95"
+  />
+  <path
+    d="M262 786h104"
+    fill="none"
+    stroke="#35f0d0"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+</svg>

@@ -1,0 +1,25 @@
+---
+import SiteLayout from './SiteLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  eyebrow?: string;
+}
+
+const { title, description, eyebrow } = Astro.props;
+---
+
+<SiteLayout title={`${title} | TangoForge`} description={description}>
+  <section class="border-b bg-secondary/40">
+    <div class="container-page py-14">
+      {eyebrow && <p class="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-muted-foreground">{eyebrow}</p>}
+      <h1 class="max-w-3xl text-4xl font-semibold tracking-normal md:text-5xl">{title}</h1>
+      <p class="mt-4 max-w-2xl text-lg leading-8 text-muted-foreground">{description}</p>
+    </div>
+  </section>
+
+  <section class="container-page py-12">
+    <slot />
+  </section>
+</SiteLayout>

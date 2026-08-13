@@ -1,0 +1,29 @@
+---
+title: 架构总览
+description: 理解 TangoForge 的桌面客户端、本地守护进程、项目存储和 Agent 接口。
+order: 3
+section: reference
+---
+
+## 系统形态
+
+TangoForge 是一个本地优先系统：
+
+```text
+Desktop Client
+      |
+Local Daemon
+      |
+SQLite + Knowledge Index
+      |
+MCP / HTTP / CLI
+      |
+AI Agents
+```
+
+## 设计目标
+
+- 任务状态保存在本地机器。
+- Agent 写操作可见、可控、可审计。
+- 人类始终拥有稳定的控制界面。
+- 项目上下文可被检索，而不是让每个 Agent 反复扫描文件。

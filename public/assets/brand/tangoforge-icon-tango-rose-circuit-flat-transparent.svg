@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">TangoForge Tango Rose Circuit Flat Transparent Icon</title>
+  <desc id="desc">A simplified flat geometric rose made of task-card petals, circuit nodes, and a command-line shaped stem on a transparent background.</desc>
+  <defs>
+    <linearGradient id="red" x1="236" y1="230" x2="748" y2="580" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fb3655"/>
+      <stop offset="1" stop-color="#b51234"/>
+    </linearGradient>
+    <linearGradient id="graphite" x1="284" y1="260" x2="720" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34445e"/>
+      <stop offset="1" stop-color="#1b2638"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke-linejoin="round">
+    <path d="M254 386 390 268 520 332 442 516Z" fill="url(#red)"/>
+    <path d="M392 268 610 220 752 364 522 332Z" fill="url(#graphite)"/>
+    <path d="M522 332 792 396 666 574 442 516Z" fill="url(#red)"/>
+    <path d="M334 540 442 516 512 660 356 634Z" fill="url(#graphite)"/>
+    <path d="M512 660 666 574 748 680 564 720Z" fill="url(#red)"/>
+
+    <path d="M424 378c52-64 154-62 202 0-78-10-142 22-202 0Z" fill="#f43f5e"/>
+    <path d="M456 430c44-38 104-38 148 0-55-4-98 18-148 0Z" fill="#172033"/>
+
+    <path
+      d="M514 666 C468 734 492 806 568 862"
+      fill="none"
+      stroke="url(#graphite)"
+      stroke-width="58"
+      stroke-linecap="round"
+    />
+    <path
+      d="M562 862h82"
+      fill="none"
+      stroke="url(#graphite)"
+      stroke-width="58"
+      stroke-linecap="round"
+    />
+    <path
+      d="M402 740 270 690 372 646Z"
+      fill="url(#graphite)"
+    />
+  </g>
+
+  <g fill="none" stroke="#35d9c8" stroke-width="24" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M374 514v78q0 24-24 24h-52"/>
+    <path d="M640 402v-82q0-24 24-24h54"/>
+    <path d="M610 696v-56q0-24 24-24h42"/>
+  </g>
+
+  <g fill="#35d9c8">
+    <circle cx="374" cy="514" r="22"/>
+    <circle cx="298" cy="616" r="22"/>
+    <circle cx="640" cy="402" r="22"/>
+    <circle cx="718" cy="296" r="22"/>
+    <circle cx="610" cy="696" r="20"/>
+  </g>
+
+  <circle cx="692" cy="616" r="22" fill="#f59e0b"/>
+</svg>

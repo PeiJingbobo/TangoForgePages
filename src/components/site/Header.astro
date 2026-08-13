@@ -1,0 +1,36 @@
+---
+const navItems = [
+  { href: '/', label: '首页' },
+  { href: '/docs', label: '文档' },
+  { href: '/blog', label: '博客' },
+  { href: '/changelog', label: '更新' },
+  { href: '/download', label: '下载' },
+];
+
+const base = import.meta.env.BASE_URL;
+const path = (href: string) => href === '/' ? base : `${base}${href.replace(/^\//, '')}`;
+---
+
+<header class="sticky top-0 z-40 border-b bg-background/85 backdrop-blur">
+  <div class="container-page flex h-16 items-center justify-between">
+    <a href={path('/')} class="flex items-center gap-3 font-semibold" aria-label="TangoForge home">
+      <img src={path('/assets/brand/tangoforge-icon.png')} alt="" class="h-9 w-9 rounded-md" />
+      <span>TangoForge</span>
+    </a>
+
+    <nav class="hidden items-center gap-6 text-sm text-muted-foreground md:flex" aria-label="Main navigation">
+      {navItems.map((item) => (
+        <a class="transition-colors hover:text-foreground" href={path(item.href)}>{item.label}</a>
+      ))}
+    </nav>
+
+    <a
+      href="https://github.com/PeiJingbobo/TangoForge"
+      class="rounded-md border px-3 py-2 text-sm font-medium transition-colors hover:bg-accent"
+      target="_blank"
+      rel="noreferrer"
+    >
+      Star
+    </a>
+  </div>
+</header>

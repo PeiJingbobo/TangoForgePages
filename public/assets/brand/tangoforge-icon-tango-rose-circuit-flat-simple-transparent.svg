@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">TangoForge Tango Rose Circuit Flat Simple Transparent Icon</title>
+  <desc id="desc">A minimal flat geometric rose made from task-card petals, one circuit trace, and a command-line shaped stem on a transparent background.</desc>
+
+  <g stroke-linejoin="round">
+    <path d="M310 398 430 286 516 408 414 560Z" fill="#ef2f4f"/>
+    <path d="M430 286 632 256 720 418 516 408Z" fill="#24344d"/>
+    <path d="M516 408 760 440 644 600 414 560Z" fill="#c91438"/>
+    <path d="M414 560 532 646 680 604 580 734Z" fill="#ef2f4f"/>
+    <path d="M440 428c50-46 130-48 180 0-64-8-118 14-180 0Z" fill="#ff5a73"/>
+    <path d="M468 476c40-28 84-28 126 0-46-4-84 10-126 0Z" fill="#172033"/>
+  </g>
+
+  <path
+    d="M514 662 C468 738 498 812 594 872"
+    fill="none"
+    stroke="#172033"
+    stroke-width="58"
+    stroke-linecap="round"
+  />
+  <path
+    d="M590 872h80"
+    fill="none"
+    stroke="#172033"
+    stroke-width="58"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M376 640 278 596 364 556Z"
+    fill="#24344d"
+  />
+
+  <g fill="none" stroke="#35d9c8" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M628 438v-80q0-26 26-26h54"/>
+    <path d="M620 626v-36q0-26 26-26h48"/>
+  </g>
+
+  <g fill="#35d9c8">
+    <circle cx="628" cy="438" r="22"/>
+    <circle cx="708" cy="332" r="22"/>
+    <circle cx="620" cy="626" r="20"/>
+  </g>
+  <circle cx="708" cy="564" r="22" fill="#f59e0b"/>
+</svg>

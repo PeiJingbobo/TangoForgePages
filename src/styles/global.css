@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+:root {
+  --background: 0 0% 98%;
+  --foreground: 240 6% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 6% 10%;
+  --primary: 203 73% 49%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 5% 96%;
+  --secondary-foreground: 240 6% 10%;
+  --muted: 240 5% 96%;
+  --muted-foreground: 240 4% 46%;
+  --accent: 203 80% 96%;
+  --accent-foreground: 203 73% 29%;
+  --border: 240 6% 90%;
+  --divider: 240 10% 93%;
+  --input: 240 5% 84%;
+  --ring: 203 73% 49%;
+  --success: 142 71% 45%;
+  --warning: 38 92% 50%;
+  --danger: 0 72% 51%;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --radius-lg: 20px;
+  --shadow-card: 0 1px 2px rgb(24 24 27 / 4%), 0 2px 8px rgb(24 24 27 / 5%);
+  --shadow-pop: 0 4px 12px rgb(24 24 27 / 8%), 0 12px 32px rgb(24 24 27 / 10%);
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-border: hsl(var(--border));
+  --color-divider: hsl(var(--divider));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-success: hsl(var(--success));
+  --color-warning: hsl(var(--warning));
+  --color-danger: hsl(var(--danger));
+  --shadow-card: var(--shadow-card);
+  --shadow-pop: var(--shadow-pop);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius-lg);
+}
+
+* {
+  box-sizing: border-box;
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family:
+    Inter, "SF Pro Text", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  font-size: 15px;
+  line-height: 1.64;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+code,
+pre {
+  font-family:
+    "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.container-page {
+  width: min(1160px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.prose {
+  color: hsl(var(--foreground));
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.prose h1 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.prose h2 {
+  font-size: 1.75rem;
+}
+
+.prose h3 {
+  font-size: 1.25rem;
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+  margin-block: 1rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.prose a {
+  color: hsl(var(--foreground));
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.prose pre {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  background: #0b1020;
+  color: #eef2ff;
+  padding: 1rem;
+}
+
+.prose code:not(pre code) {
+  border-radius: 0.35rem;
+  background: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+  padding: 0.125rem 0.35rem;
+}

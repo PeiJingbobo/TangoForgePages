@@ -1,0 +1,16 @@
+---
+const year = new Date().getFullYear();
+const base = import.meta.env.BASE_URL;
+const path = (href: string) => href === '/' ? base : `${base}${href.replace(/^\//, '')}`;
+---
+
+<footer class="border-t">
+  <div class="container-page flex flex-col gap-4 py-8 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
+    <p>© {year} TangoForge. 面向 Vibe Coding 的本地任务协作中间件。</p>
+    <div class="flex gap-4">
+      <a class="hover:text-foreground" href={path('/docs')}>文档</a>
+      <a class="hover:text-foreground" href={path('/blog')}>博客</a>
+      <a class="hover:text-foreground" href="https://github.com/PeiJingbobo/TangoForge" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </div>
+</footer>
