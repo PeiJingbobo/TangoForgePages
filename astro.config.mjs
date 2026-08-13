@@ -6,8 +6,8 @@ import mdx from '@astrojs/mdx';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
-const site = process.env.SITE_URL ?? 'https://tangoforge.pei.cool';
-const base = process.env.SITE_BASE ?? '/';
+const site = process.env.SITE_URL ?? 'https://peijingbobo.github.io';
+const base = process.env.SITE_BASE ?? '/TangoForgePages/';
 
 // https://astro.build/config
 export default defineConfig({

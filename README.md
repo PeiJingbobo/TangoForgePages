@@ -33,8 +33,8 @@ pnpm preview
 The workflow builds with:
 
 ```text
-SITE_URL=https://tangoforge.pei.cool
-SITE_BASE=/
+SITE_URL=https://peijingbobo.github.io
+SITE_BASE=/TangoForgePages/
 ```
 
-The custom domain is configured in `public/CNAME`.
+Use `SITE_BASE=/` only after moving the site to a custom domain.
