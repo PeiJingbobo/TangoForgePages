@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">TangoForge Spark Kanban Orthogonal Transparent Icon</title>
+  <desc id="desc">A transparent flat line icon with three kanban columns, rounded orthogonal connectors, task nodes, and a small forge spark.</desc>
+  <defs>
+    <linearGradient id="blue" x1="210" y1="220" x2="810" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#35d9c8"/>
+      <stop offset="1" stop-color="#2489f5"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="468" y1="448" x2="560" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd66b"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#243956" stroke-width="28" opacity=".95">
+      <rect x="194" y="218" width="216" height="588" rx="34"/>
+      <rect x="444" y="282" width="216" height="492" rx="34"/>
+      <rect x="694" y="356" width="176" height="330" rx="34"/>
+    </g>
+
+    <g stroke="url(#blue)" stroke-width="32">
+      <path d="M244 300h116v134H244z"/>
+      <path d="M244 514h116v210H244z"/>
+      <path d="M494 356h116v134H494z"/>
+      <path d="M494 584h116v112H494z"/>
+      <path d="M744 438h76v166h-76z"/>
+    </g>
+
+    <g stroke="#35d9c8" stroke-width="24">
+      <path d="M360 606h98q26 0 26-26v-54"/>
+      <path d="M540 490v-46q0-24 24-24h48"/>
+      <path d="M540 538v54q0 24 24 24h48"/>
+      <path d="M568 514h146q24 0 24-24v-10"/>
+    </g>
+  </g>
+
+  <g fill="#35d9c8">
+    <circle cx="244" cy="300" r="20"/>
+    <circle cx="244" cy="514" r="20"/>
+    <circle cx="494" cy="356" r="20"/>
+    <circle cx="494" cy="584" r="20"/>
+    <circle cx="744" cy="438" r="20"/>
+  </g>
+
+  <g fill="#79dfff">
+    <circle cx="458" cy="606" r="18"/>
+    <circle cx="540" cy="490" r="18"/>
+    <circle cx="540" cy="538" r="18"/>
+    <circle cx="714" cy="514" r="18"/>
+  </g>
+
+  <path
+    d="M512 452c7 0 13 5 14 12l11 42 42 11c7 1 12 7 12 14s-5 13-12 14l-42 11-11 42c-1 7-7 12-14 12s-13-5-14-12l-11-42-42-11c-7-1-12-7-12-14s5-13 12-14l42-11 11-42c1-7 7-12 14-12Z"
+    fill="url(#spark)"
+  />
+</svg>
